@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco John's – Bigger. Bolder. Better.</title>
+    <meta name="description" content="Taco John's is an American fast food restaurant serving Mexican-inspired fast food and our signature Potato Olés. Experience bigger, bolder, better flavors today!">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Taco John's – Bigger. Bolder. Better.">
+    <meta property="og:description" content="Taco John's is an American fast food restaurant serving Mexican-inspired fast food and our signature Potato Olés.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1599974579605-2e95a58383c6?q=80&w=2070&auto=format&fit=crop">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://images.unsplash.com/photo-1599974579605-2e95a58383c6?q=80&w=2070&auto=format&fit=crop">
+    <link rel="shortcut icon" href="https://images.unsplash.com/photo-1599974579605-2e95a58383c6?q=80&w=2070&auto=format&fit=crop">
+    <link rel="apple-touch-icon" href="https://images.unsplash.com/photo-1599974579605-2e95a58383c6?q=80&w=2070&auto=format&fit=crop">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://example.com">
+    
+    <!-- Hero image preload -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1599974579605-2e95a58383c6?q=80&w=2070&auto=format&fit=crop">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Taco John's",
+      "description": "Taco John's is an American fast food restaurant. Serves Mexican-inspired fast food as well as the company's signature dish, Potato Olés, which are bite-sized deep-fried potato nuggets coated with a proprietary blend of seasonings.",
+      "address": { "@type": "PostalAddress", "streetAddress": "" },
+      "telephone": "",
+      "openingHours": [],
+      "image": "https://images.unsplash.com/photo-1599974579605-2e95a58383c6?q=80&w=2070&auto=format&fit=crop"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e4002b',
+                        secondary: '#4a1411',
+                        accent: '#ffb81c',
+                    },
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+                        heading: ['Impact', 'Haettenschweiler', '"Arial Narrow Bold"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-heading { font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 text-secondary">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-3xl font-heading text-primary uppercase tracking-wider">Taco John's</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-700 hover:text-primary">About</a>
+                <a href="#menu" class="text-gray-700 hover:text-primary">Menu</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
+            </div>
+            <a href="tel:" class="hidden md:block bg-accent text-secondary font-bold py-2 px-4 rounded-full hover:bg-yellow-500 transition duration-300">Order Now</a>
+            <button id="mobile-menu-button" class="md:hidden text-secondary focus:outline-none">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+            <a href="#menu" class="block py-2 px-4 text-sm hover:bg-gray-200">Menu</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+            <a href="tel:" class="block py-2 px-4 text-sm bg-accent text-secondary text-center font-bold">Order Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative h-[60vh] min-h-[400px] flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1599974579605-2e95a58383c6?q=80&w=2070&auto=format&fit=crop" 
+                 alt="A delicious spread of assorted tacos" 
+                 class="absolute inset-0 w-full h-full object-cover"
+                 loading="eager" fetchpriority="high" decoding="async" width="2070" height="1380">
+            <div class="relative z-20 text-center p-4">
+                <h1 class="text-5xl md:text-7xl font-heading uppercase tracking-wider text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Bigger. Bolder. Better.</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-200">Home of the original Taco Tuesday and our legendary Potato Olés®.</p>
+                <a href="#menu" class="mt-8 inline-block bg-primary text-white font-bold py-3 px-8 rounded-full text-lg uppercase hover:bg-red-700 transition duration-300">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-heading text-secondary uppercase">About Taco John's</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mt-4 mb-8"></div>
+                <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+                    Taco John's is an American fast food restaurant serving Mexican-inspired fast food. We're famous for our signature dish, Potato Olés®, which are bite-sized deep-fried potato nuggets coated with a proprietary blend of seasonings. We're committed to quality ingredients and bold flavors that you won't find anywhere else.
+                </p>
+            </div>
+        </section>
+
+        <!-- Menu Highlights Section -->
+        <section id="menu" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-heading text-secondary uppercase text-center">Menu Favorites</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mt-4 mb-8"></div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <!-- Menu Item 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565299585323-15d11e282b54?q=80&w=1912&auto=format&fit=crop" alt="Crispy Shell Tacos" class="w-full h-56 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary">Street Tacos</h3>
+                            <p class="mt-2 text-gray-600">Your choice of grilled chicken or sirloin steak, with our special garlic lime sauce.</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1625792319383-95dd2955c8b1?q=80&w=1974&auto=format&fit=crop" alt="Potato Olés" class="w-full h-56 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary">Potato Olés®</h3>
+                            <p class="mt-2 text-gray-600">Our legendary round bites of crunchy potato, cooked fresh and sprinkled with our signature blend of spices.</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=2071&auto=format&fit=crop" alt="Meat and Potato Burrito" class="w-full h-56 object-cover" loading="lazy">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary">Meat & Potato Burrito</h3>
+                            <p class="mt-2 text-gray-600">A fan favorite packed with 100% American beef, Potato Olés®, nacho cheese, sour cream, lettuce, and tomatoes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-secondary text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-heading uppercase text-white">Visit Us</h2>
+                <div class="w-24 h-1 bg-accent mx-auto mt-4 mb-8"></div>
+                <div class="max-w-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                    <div>
+                        <h3 class="text-xl font-bold text-accent mb-2">Our Location</h3>
+                        <p>Find a Taco John's near you!</p>
+                        <p class="mt-1">[Your Street Address]</p>
+                        <p>[City, State, Zip Code]</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-accent mb-2">Hours</h3>
+                        <p>Monday - Sunday</p>
+                        <p>10:00 AM - 10:00 PM</p>
+                        <h3 class="text-xl font-bold text-accent mt-4 mb-2">Contact</h3>
+                        <p>Phone: [Your Phone Number]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-accent"><i data-lucide="facebook"></i></a>
+                <a href="#" class="hover:text-accent"><i data-lucide="instagram"></i></a>
+                <a href="#" class="hover:text-accent"><i data-lucide="twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Taco John's. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
