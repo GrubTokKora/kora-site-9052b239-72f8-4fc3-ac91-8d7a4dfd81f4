@@ -110,6 +110,16 @@ body {
   transition: opacity 1.2s ease, transform 6s ease;
 }
 
+.slider-slide__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .slider-slide.active {
   z-index: 1;
   opacity: 1;
@@ -350,6 +360,15 @@ footer a:hover {
   .slider-slide {
     transition: none;
   }
+}
+
+/* ========== FAQ ========== */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary {
+  list-style: none;
 }
 
 /* ========== CUSTOM SCROLLBAR ========== */

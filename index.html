@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taco John's | 3 Locations — Leominster, Boston &amp; Newington</title>
+  <title>Taco John's | Mexican Food, Tacos &amp; Potato Olés — MA &amp; CT</title>
   <meta name="description"
-    content="Visit our 3 Taco John's locations in Leominster MA, Boston MA, and Newington CT. Order online, view menu, join rewards, and find directions." />
+    content="Order Mexican food at Taco John's in Leominster, Boston, and Newington. Enjoy tacos, burritos, Potato Olés®, breakfast, and the Value Menu. Order online today." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Taco John's | 3 Locations — Leominster, Boston &amp; Newington" />
+  <meta property="og:title" content="Taco John's | Mexican Food, Tacos &amp; Potato Olés — MA &amp; CT" />
   <meta property="og:description"
-    content="Visit our 3 Taco John's locations in Leominster MA, Boston MA, and Newington CT. Order online, view menu, join rewards, and find directions." />
+    content="Order Mexican food at Taco John's in Leominster, Boston, and Newington. Enjoy tacos, burritos, Potato Olés®, breakfast, and the Value Menu. Order online today." />
   <meta property="og:type" content="website" />
   <meta property="og:image"
     content="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350021_3ivt4z.jpg" />
@@ -21,9 +21,9 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Taco John's | 3 Locations — Leominster, Boston &amp; Newington" />
+  <meta name="twitter:title" content="Taco John's | Mexican Food, Tacos &amp; Potato Olés — MA &amp; CT" />
   <meta name="twitter:description"
-    content="Taco John's in Leominster, Boston, and Newington. Order online, explore the menu, and earn rewards." />
+    content="Order Mexican food at Taco John's in Leominster, Boston, and Newington. Tacos, burritos, Potato Olés®, and rewards." />
   <meta name="twitter:image"
     content="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350021_3ivt4z.jpg" />
 
@@ -74,7 +74,13 @@
           "Su 07:00-24:00"
         ],
         "servesCuisine": "Mexican",
-        "priceRange": "$"
+        "priceRange": "$",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "reviewCount": "1085",
+          "bestRating": "5"
+        }
       },
       {
         "@type": "Restaurant",
@@ -125,10 +131,49 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where are your Taco John's locations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We currently serve Leominster, MA (536 N. Main Street), Boston, MA (77 Summer Street), and a Newington, CT location coming soon at 56B Costello Road."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What Mexican food and menu favorites do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enjoy bold Mexican flavors including tacos, burritos, Potato Olés, Stuffed Grilled Tacos, the Fried Chicken Taco, breakfast burritos, and everyday Value Menu options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I order online or for delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Order at order.tacojohns.com, use the Taco John's mobile app, or choose DoorDash for delivery. Join Bigger Bolder Rewards to earn free food."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer catering for groups and events?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes—order catering for offices, parties, and events through our catering partners for trays of tacos, burritos, and Potato Olés."
+        }
+      }
+    ]
+  }
+  </script>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="style.css" />
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -139,29 +184,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-
-  <!-- Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'tj-red': '#e4002b',
-            'tj-red-dark': '#b30022',
-            'tj-yellow': '#ffb81c',
-            'tj-teal': '#00a896',
-            'tj-burgundy': '#4a1411',
-            'tj-cream': '#f5f1ed',
-            'tj-taupe': '#8c7a72',
-          },
-          fontFamily: {
-            'display': ['Montserrat', 'Arial Black', 'Impact', 'sans-serif'],
-            'body': ['Montserrat', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
 </head>
 
 <body class="font-body bg-tj-cream text-tj-burgundy antialiased overflow-x-hidden" data-page-type="home">
@@ -172,14 +194,23 @@
   <section id="hero" class="relative min-h-screen overflow-hidden bg-black">
     <!-- Animated Background Slider -->
     <div id="hero-slider" class="absolute inset-0 z-0">
-      <div class="slider-slide active"
-        style="background-image: url('https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350021_3ivt4z.jpg');">
+      <div class="slider-slide active">
+        <img
+          src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350021_3ivt4z.jpg"
+          alt="Taco John's Mexican food with tacos, burritos, and Potato Olés"
+          width="1920" height="1080" class="slider-slide__img" loading="eager" fetchpriority="high" decoding="async">
       </div>
-      <div class="slider-slide"
-        style="background-image: url('https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350008_lnzihv.jpg');">
+      <div class="slider-slide">
+        <img
+          src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350008_lnzihv.jpg"
+          alt="Fresh tacos and Mexican favorites from Taco John's"
+          width="1920" height="1080" class="slider-slide__img" loading="lazy" decoding="async">
       </div>
-      <div class="slider-slide"
-        style="background-image: url('https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350015_f8oscp.jpg');">
+      <div class="slider-slide">
+        <img
+          src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350015_f8oscp.jpg"
+          alt="Bold Mexican flavors and craveable burritos at Taco John's"
+          width="1920" height="1080" class="slider-slide__img" loading="lazy" decoding="async">
       </div>
     </div>
 
@@ -196,11 +227,11 @@
         </p>
         <h1
           class="font-display text-4xl sm:text-5xl lg:text-7xl font-black uppercase leading-[0.95] tracking-tight text-white drop-shadow-lg">
-          Your Taco John&apos;s
-          <span class="block text-tj-red">Favorites Are Here</span>
+          Taco John&apos;s Mexican Food
+          <span class="block text-tj-red">Tacos, Burritos &amp; Potato Olés</span>
         </h1>
         <p class="mt-5 sm:mt-6 text-base sm:text-lg lg:text-xl text-white/90 leading-relaxed max-w-xl">
-          Freshly prepared tacos, burritos, and Potato Oles across Leominster, Boston, and Newington. Order online,
+          Freshly prepared tacos, burritos, and Potato Olés across Leominster, Boston, and Newington. Order online,
           find your nearest location, and dig in.
         </p>
         <div class="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
@@ -241,7 +272,8 @@
           <div class="aspect-[4/3] overflow-hidden">
             <img
               src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777349999_8yllz3.jpg"
-              alt="Value Menu Items"
+              alt="Taco John's Value Menu tacos and Mexican food deals starting at $2"
+              width="800" height="600"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
           </div>
           <div class="p-6 lg:p-8 text-center">
@@ -260,7 +292,8 @@
           <div class="aspect-[4/3] overflow-hidden">
             <img
               src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777349977_mpzq4z.jpg"
-              alt="Fresh Ingredients"
+              alt="Premium ingredients for Boss Burrito and Meat &amp; Potato Burrito"
+              width="800" height="600"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
           </div>
           <div class="p-6 lg:p-8 text-center">
@@ -279,7 +312,8 @@
           <div class="aspect-[4/3] overflow-hidden">
             <img
               src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777349971_z24cv5.jpg"
-              alt="Breakfast Burrito"
+              alt="Breakfast burrito and Mexican breakfast favorites at Taco John's"
+              width="800" height="600"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy">
           </div>
           <div class="p-6 lg:p-8 text-center">
@@ -516,7 +550,7 @@
   </section>
 
   <!-- ============ ABOUT SECTION ============ -->
-  <section class="py-16 sm:py-20 bg-white">
+  <section id="about" class="py-16 sm:py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2
         class="about-title font-display text-3xl sm:text-4xl lg:text-5xl font-black text-tj-burgundy uppercase tracking-tight mb-6 opacity-0 translate-y-6">
@@ -533,6 +567,113 @@
         class="about-cta inline-block bg-tj-red text-white px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-tj-red-dark hover:scale-105 transition-all shadow-xl text-sm opacity-0 translate-y-6">
         Order Online Now
       </a>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS SECTION ============ -->
+  <section id="reviews" class="py-16 sm:py-20 lg:py-24 bg-tj-cream" aria-labelledby="reviews-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 lg:mb-14">
+        <h2 id="reviews-heading"
+          class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-tj-burgundy uppercase tracking-tight">
+          Guest Reviews
+        </h2>
+        <p class="text-tj-taupe mt-4 text-lg max-w-2xl mx-auto">
+          Real feedback from guests who love our Mexican food, tacos, and Potato Olés®.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <blockquote class="review testimonial bg-white p-6 lg:p-8 shadow-lg">
+          <div class="flex items-center gap-1 text-tj-yellow mb-4" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="text-tj-burgundy leading-relaxed mb-4">
+            &ldquo;The tacos are delicious—so much better than the usual. On Taco Tuesday they&apos;re generously filled
+            and full of flavor. Hard to beat the value and quality here.&rdquo;
+          </p>
+          <footer class="text-sm font-semibold text-tj-taupe uppercase tracking-wider">— Amanda C.</footer>
+        </blockquote>
+        <blockquote class="review testimonial bg-white p-6 lg:p-8 shadow-lg">
+          <div class="flex items-center gap-1 text-tj-yellow mb-4" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="text-tj-burgundy leading-relaxed mb-4">
+            &ldquo;Food was amazing as always. Everything about this order was a perfect score—fresh, bold, and ready
+            fast.&rdquo;
+          </p>
+          <footer class="text-sm font-semibold text-tj-taupe uppercase tracking-wider">— Robert K.</footer>
+        </blockquote>
+        <blockquote class="review testimonial bg-white p-6 lg:p-8 shadow-lg">
+          <div class="flex items-center gap-1 text-tj-yellow mb-4" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <p class="text-tj-burgundy leading-relaxed mb-4">
+            &ldquo;They have good food at a reasonable price.&rdquo;
+          </p>
+          <footer class="text-sm font-semibold text-tj-taupe uppercase tracking-wider">— Heidi H.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ SECTION ============ -->
+  <section id="faq" class="faq py-16 sm:py-20 lg:py-24 bg-white" aria-labelledby="faq-heading">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 lg:mb-12">
+        <h2 id="faq-heading"
+          class="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-tj-burgundy uppercase tracking-tight">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-tj-taupe mt-4 text-lg">
+          Quick answers about ordering, locations, and our Mexican menu.
+        </p>
+      </div>
+      <div class="space-y-4">
+        <details class="faq-item group border border-tj-burgundy/10 bg-tj-cream open:shadow-md">
+          <summary
+            class="cursor-pointer list-none font-display font-bold text-tj-burgundy uppercase tracking-wide text-sm sm:text-base px-5 py-4 flex items-center justify-between gap-4">
+            Where are your Taco John&apos;s locations?
+            <span class="text-tj-red text-xl leading-none group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-tj-taupe leading-relaxed">
+            We currently serve Leominster, MA (536 N. Main Street), Boston, MA (77 Summer Street), and a Newington, CT
+            location coming soon at 56B Costello Road. Find hours, directions, and online ordering on each location page.
+          </p>
+        </details>
+        <details class="faq-item group border border-tj-burgundy/10 bg-tj-cream open:shadow-md">
+          <summary
+            class="cursor-pointer list-none font-display font-bold text-tj-burgundy uppercase tracking-wide text-sm sm:text-base px-5 py-4 flex items-center justify-between gap-4">
+            What Mexican food and menu favorites do you serve?
+            <span class="text-tj-red text-xl leading-none group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-tj-taupe leading-relaxed">
+            Enjoy bold Mexican flavors including tacos, burritos, Potato Olés®, Stuffed Grilled Tacos, the Fried Chicken
+            Taco, breakfast burritos, and everyday Value Menu options. Order online or visit us for breakfast, lunch, or dinner.
+          </p>
+        </details>
+        <details class="faq-item group border border-tj-burgundy/10 bg-tj-cream open:shadow-md">
+          <summary
+            class="cursor-pointer list-none font-display font-bold text-tj-burgundy uppercase tracking-wide text-sm sm:text-base px-5 py-4 flex items-center justify-between gap-4">
+            How do I order online or for delivery?
+            <span class="text-tj-red text-xl leading-none group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-tj-taupe leading-relaxed">
+            Order now at order.tacojohns.com, use the Taco John&apos;s mobile app, or choose DoorDash for delivery. Join
+            Bigger Bolder Rewards to earn free food.
+          </p>
+        </details>
+        <details class="faq-item group border border-tj-burgundy/10 bg-tj-cream open:shadow-md">
+          <summary
+            class="cursor-pointer list-none font-display font-bold text-tj-burgundy uppercase tracking-wide text-sm sm:text-base px-5 py-4 flex items-center justify-between gap-4">
+            Do you offer catering for groups and events?
+            <span class="text-tj-red text-xl leading-none group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="px-5 pb-5 text-tj-taupe leading-relaxed">
+            Yes—order catering for offices, parties, and events through our catering partners. Visit the Catering link
+            in the menu for trays of tacos, burritos, and Potato Olés®.
+          </p>
+        </details>
+      </div>
     </div>
   </section>
 
