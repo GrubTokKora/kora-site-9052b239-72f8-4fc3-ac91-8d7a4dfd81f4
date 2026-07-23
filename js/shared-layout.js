@@ -132,7 +132,8 @@ function getSharedFooter(pageType) {
       </div>
 
       <div class="border-t border-white/20 pt-6 text-center">
-        <p class="text-white/85 text-xs font-medium">&copy;2026 Taco John's International, Inc. All Rights Reserved.</p>
+        <p class="text-white/85 text-xs font-medium">&copy; 2026 Reliance Hospitality. All rights reserved.</p>
+        <p class="text-white/70 text-xs mt-2 max-w-3xl mx-auto leading-relaxed">This website represents participating Taco John's restaurants in Leominster, Boston and Newington, which are independently owned and operated by Reliance Hospitality, an authorized Taco John's franchisee. Online orders are processed through the official Taco John's ordering platform.</p>
       </div>
     </div>
   </footer>
