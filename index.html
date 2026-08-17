@@ -23,6 +23,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta content="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350021_3ivt4z.jpg" property="og:image"/>
 <meta content="Taco John's" property="og:site_name"/>
 <meta content="en_US" property="og:locale"/>
+<meta content="https://tacojohnsnewengland.com" property="og:url"/>
+<link href="https://tacojohnsnewengland.com" rel="canonical"/>
+<meta content="US-MA" name="geo.region"/>
+<meta content="Leominster" name="geo.placename"/>
+<meta content="42.5251, -71.7596" name="ICBM"/>
 <!-- Twitter -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Taco John's | Mexican Food, Tacos &amp; Potato Olés — MA &amp; CT" name="twitter:title"/>
@@ -38,14 +43,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@graph": [
     {
       "@type": "WebSite",
-      "name": "Taco John's"
+      "name": "Taco John's",
+      "url": "https://tacojohnsnewengland.com",
+      "sameAs": [
+        "https://www.facebook.com/tacojohns",
+        "https://twitter.com/tacojohns",
+        "https://www.instagram.com/tacojohns/"
+      ]
     },
     {
       "@type": "Restaurant",
       "name": "Taco John's — Leominster",
+      "url": "https://tacojohnsnewengland.com/location-leominster",
       "description": "Taco John's in Leominster, MA — bold Mexican flavors, signature Potato Olés®, and craveable classics. Order online or visit us on N. Main Street.",
       "image": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350021_3ivt4z.jpg",
       "telephone": "+1-978-252-0775",
+      "menu": "https://order.tacojohns.com/menu/taco-johns-leominster",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "536 N. Main Street",
@@ -53,6 +66,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "addressRegion": "MA",
         "postalCode": "01453",
         "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.5251,
+        "longitude": -71.7596
       },
       "openingHours": [
         "Mo 07:00-24:00",
@@ -63,8 +81,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "Sa 07:00-01:00",
         "Su 07:00-24:00"
       ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "07:00", "closes": "24:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "07:00", "closes": "01:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "07:00", "closes": "24:00"}
+      ],
       "servesCuisine": "Mexican",
       "priceRange": "$",
+      "sameAs": [
+        "https://www.facebook.com/tacojohns",
+        "https://twitter.com/tacojohns",
+        "https://www.instagram.com/tacojohns/"
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.6",
@@ -75,9 +103,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {
       "@type": "Restaurant",
       "name": "Taco John's — Boston",
+      "url": "https://tacojohnsnewengland.com/location-boston",
       "description": "Taco John's in Boston, MA — bold Mexican flavors downtown on Summer Street. Order online or stop in for breakfast, lunch, or dinner.",
       "image": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350008_lnzihv.jpg",
       "telephone": "+1-617-431-8787",
+      "menu": "https://order.tacojohns.com/menu/boston-ma-summer-street",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "77 Summer Street",
@@ -85,6 +115,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "addressRegion": "MA",
         "postalCode": "02111",
         "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.3539,
+        "longitude": -71.058
       },
       "openingHours": [
         "Mo 07:00-24:00",
@@ -95,12 +130,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "Sa 07:00-24:00",
         "Su 08:00-24:00"
       ],
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "07:00", "closes": "24:00"},
+        {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "24:00"}
+      ],
       "servesCuisine": "Mexican",
-      "priceRange": "$"
+      "priceRange": "$",
+      "sameAs": [
+        "https://www.facebook.com/tacojohns",
+        "https://twitter.com/tacojohns",
+        "https://www.instagram.com/tacojohns/"
+      ]
     },
     {
       "@type": "Restaurant",
       "name": "Taco John's — Newington",
+      "url": "https://tacojohnsnewengland.com/location-newington",
       "description": "Taco John's coming soon to Newington, CT — stay tuned for opening details at Costello Road.",
       "image": "https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/9052b239-72f8-4fc3-ac91-8d7a4dfd81f4/de8c94d8-887e-4625-825f-ec262dbc28df/1777350015_f8oscp.jpg",
       "telephone": "+1-800-854-0819",
@@ -111,6 +156,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "addressRegion": "CT",
         "postalCode": "06111",
         "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.686,
+        "longitude": -72.7241
       },
       "servesCuisine": "Mexican",
       "priceRange": "$"
@@ -168,7 +218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap"></noscript>
 <!-- KORA_GOOGLE_FONTS_END -->
-<link href="https://tacojohnsnewengland.com" rel="canonical"><meta content="https://tacojohnsnewengland.com" property="og:url"/></link></head>
+</head>
 <body>
 <!-- KORA_TRACKING_GTM_BODY_START -->
 <!-- Google Tag Manager (noscript) -->
