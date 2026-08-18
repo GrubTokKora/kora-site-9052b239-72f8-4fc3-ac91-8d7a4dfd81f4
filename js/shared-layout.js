@@ -95,8 +95,8 @@ function getSharedFooter(pageType) {
     `;
 
   return `
-  <footer class="bg-tj-red text-white ${pageType === 'home' ? 'py-14' : 'mt-16'}">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${pageType === 'home' ? '' : 'pt-16 pb-10'}">
+  <footer class="bg-tj-red text-white ${pageType === 'home' ? 'pt-14 pb-0' : 'mt-16'}">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${pageType === 'home' ? '' : 'pt-16'}">
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-10">
         <div>
