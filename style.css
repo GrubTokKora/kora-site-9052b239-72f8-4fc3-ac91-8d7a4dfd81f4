@@ -311,6 +311,15 @@ body {
       transparent 2px 10px);
 }
 
+/* ========== LOCATION PAGES ========== */
+@media (min-width: 1024px) {
+  .location-sticky-image {
+    position: sticky;
+    top: calc(var(--header-height) + 1.5rem);
+    align-self: start;
+  }
+}
+
 /* ========== LOCATION CARDS ========== */
 .location-card {
   will-change: transform, box-shadow;
