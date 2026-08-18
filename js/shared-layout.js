@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!headerMount || !footerMount) return;
 
-  const pageType = document.body.dataset.pageType === 'home' ? 'home' : 'location';
+  const pageTypeEl = document.querySelector('[data-page-type]');
+  const pageType = pageTypeEl?.dataset.pageType === 'home' ? 'home' : 'location';
 
   const headerHtml = getHomeHeader(pageType);
   const footerHtml = getSharedFooter(pageType);

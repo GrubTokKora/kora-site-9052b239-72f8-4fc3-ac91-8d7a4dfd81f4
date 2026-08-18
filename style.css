@@ -202,6 +202,10 @@ body {
 }
 
 /* ========== APP DOWNLOAD BANNER ========== */
+[data-page-type="home"] .app-download-banner + #shared-footer footer {
+  margin-top: 0;
+}
+
 .app-download-banner__bg {
   background-repeat: no-repeat;
 }
