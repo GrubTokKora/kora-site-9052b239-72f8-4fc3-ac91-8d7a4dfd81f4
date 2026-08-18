@@ -52,8 +52,8 @@ function getHomeHeader(pageType) {
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 scrolled">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex-shrink-0 block" aria-label="Taco John's home">
-          <img src="${TACO_JOHNS_LOGO_URL}" alt="Taco John's logo" width="220" height="48" class="h-10 w-auto max-h-10 object-contain object-left" decoding="async" />
+        <a href="index.html" class="navbar-logo-link" aria-label="Taco John's home">
+          <img src="${TACO_JOHNS_LOGO_URL}" alt="Taco John's logo" width="220" height="48" class="navbar-logo" decoding="async" />
         </a>
         <div class="hidden md:flex items-center space-x-8">
           <a href="https://tacojohns.com/our-menu/" target="_blank" class="nav-link text-sm font-semibold uppercase tracking-wider hover:text-tj-red transition-colors">Menu</a>
