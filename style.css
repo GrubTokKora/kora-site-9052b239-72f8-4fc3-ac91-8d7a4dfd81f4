@@ -109,8 +109,52 @@ body {
   min-height: calc(100vh - var(--header-height));
 }
 
+#hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.42) 0%,
+    rgba(0, 0, 0, 0.12) 45%,
+    rgba(0, 0, 0, 0.06) 100%
+  );
+}
+
 #hero .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   min-height: calc(100vh - var(--header-height));
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+#hero .hero-content__inner {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#hero .hero-content__inner > p:first-of-type {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  #hero .hero-content {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero .hero-content {
+    padding: 2.5rem;
+  }
 }
 
 /* Hero Background */
