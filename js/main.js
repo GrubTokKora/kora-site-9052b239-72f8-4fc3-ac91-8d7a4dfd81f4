@@ -9,45 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile nav is handled in shared-layout.js (header is injected there).
 
-  // ========== HERO SLIDER ==========
-  const slides = document.querySelectorAll('.slider-slide');
-  const dots = document.querySelectorAll('.slider-dot');
-  let currentSlide = 0;
-  let slideInterval;
-
-  function goToSlide(index) {
-    slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
-    currentSlide = index;
-    slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
-  }
-
-  function nextSlide() {
-    const next = (currentSlide + 1) % slides.length;
-    goToSlide(next);
-  }
-
-  // Auto-advance slides
-  function startSlideShow() {
-    slideInterval = setInterval(nextSlide, 5000);
-  }
-
-  function stopSlideShow() {
-    clearInterval(slideInterval);
-  }
-
-  // Dot click handlers
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      stopSlideShow();
-      goToSlide(index);
-      startSlideShow();
-    });
-  });
-
-  startSlideShow();
-
   // ========== HERO PARALLAX ON SCROLL ==========
   gsap.to('#hero-slider', {
     y: -300,
@@ -59,22 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       scrub: 1,
     },
   });
-
-  // Fade out hero bottom bar (Order Now + dots) on scroll
-  const heroBottom = document.getElementById('hero-bottom');
-  if (heroBottom) {
-    gsap.to(heroBottom, {
-      opacity: 0,
-      y: -40,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '#hero',
-        start: 'top top',
-        end: '60% top',
-        scrub: 1,
-      },
-    });
-  }
 
   // ========== VALUE CARDS SCROLL REVEAL ==========
   const valueCards = document.querySelectorAll('.value-card');
