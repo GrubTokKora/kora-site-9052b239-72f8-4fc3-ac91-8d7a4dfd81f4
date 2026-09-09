@@ -1,4 +1,4 @@
-# Site index · format 1
+# Site index · format 2
 Structure and the names of what each page offers. Values that change often — prices, hours, phone,
 address — and body copy are deliberately not recorded here; read the page itself for those.
 
@@ -47,6 +47,18 @@ sections:
 also: This location is not open. The page carries an Order Now button that says online ordering is coming soon, and the hours block has no hours in it. Both have to change together when the restaurant opens, along with the Coming Soon marker on index.html's locations block.
 also: This page carries no ids at all, so every change here is located by its heading or its wording.
 
+## support files
+Files that are not pages. A line marked [content] holds words or data a visitor reads, so a
+change to the site's content can land there; the rest only make the site work or look right.
+- `llms.txt` — a plain-text summary of the business for AI crawlers — derived from the site by the deploy, not written by hand
+- `robots.txt` — crawler rules and the sitemap link — derived from the site by the deploy, not written by hand
+- `sitemap.xml` — the list of page URLs — derived from the site by the deploy, not written by hand
+- `style.css` — the site's styling and brand colours
+- `js/main.js` — the hero slider and the scroll animations
+- `js/shared-layout.js` — THE HEADER AND FOOTER MARKUP for every page, and the logo  [content]
+
 ## shared (every page)
-The header, navigation, mobile menu and footer are propagated from index.html to every other page by
-`shell_propagation`. A change to any of them is made on index.html alone and copied automatically.
+The header, navigation, mobile menu and footer are NOT in the pages. They are rendered at
+load by `js/shared-layout.js`, which is where every change to the shared chrome has to be made. Editing a
+page's markup to change the header will appear to do nothing, because there is no header in
+it to change.
