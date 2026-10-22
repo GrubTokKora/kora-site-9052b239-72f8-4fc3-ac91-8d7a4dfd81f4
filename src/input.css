@@ -10,8 +10,8 @@
   --color-tj-burgundy: #4a1411;
   --color-tj-cream: #f5f1ed;
   --color-tj-taupe: #8c7a72;
-  --font-display: Montserrat, "Arial Black", Impact, sans-serif;
-  --font-body: Montserrat, sans-serif;
+  --font-display: var(--font-body);
+  --font-body: var(--kora-font-body, Montserrat), sans-serif;
 }
 
 @layer base {

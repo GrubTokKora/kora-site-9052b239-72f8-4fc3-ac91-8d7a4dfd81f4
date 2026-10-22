@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--kora-font-body, 'Montserrat'), sans-serif;
   background-color: var(--tj-cream);
   color: var(--tj-burgundy);
   overflow-x: hidden;
@@ -223,7 +223,7 @@ body {
   padding: 0.75rem 1rem;
   background: #fff;
   color: #111;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: var(--kora-font-body, Montserrat), Arial, sans-serif;
   font-weight: 800;
   font-size: 0.65rem;
   line-height: 1.25;
@@ -275,7 +275,7 @@ body {
 
 /* Typography aligned to tacojohns.com app strip: bold caps title, smaller regular subline, much larger red headline */
 .app-download-banner__title {
-  font-family: Montserrat, 'Arial Black', Arial, sans-serif;
+  font-family: var(--kora-font-body, Montserrat), 'Arial Black', Arial, sans-serif;
   font-weight: 800;
   font-size: clamp(1.0625rem, 2.4vw, 1.375rem);
   line-height: 1.12;
@@ -285,7 +285,7 @@ body {
 }
 
 .app-download-banner__sub {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: var(--kora-font-body, Montserrat), Arial, sans-serif;
   font-weight: 400;
   font-size: clamp(0.75rem, 1.85vw, 0.9375rem);
   line-height: 1.5;
@@ -295,7 +295,7 @@ body {
 }
 
 .app-download-banner__free {
-  font-family: Montserrat, 'Arial Black', Arial, sans-serif;
+  font-family: var(--kora-font-body, Montserrat), 'Arial Black', Arial, sans-serif;
   font-weight: 900;
   font-size: clamp(2.5rem, 9.5vw, 4.25rem);
   line-height: 0.92;
