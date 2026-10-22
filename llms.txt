@@ -1,32 +1,22 @@
-# Taco John's New England
+# Taco John's
 
-> Reliance Hospitality operates Taco John's restaurants in Massachusetts and Connecticut. Bold Mexican food, tacos, burritos, Potato Olés®, breakfast, and a Value Menu.
+> Taco John's is a fast-food restaurant located at 536 N. Main Street in Leominster, MA. The establishment operates under the tagline "Bigger. Bolder. Better."
 
-## Locations
+## Location & Contact
+- Address: 536 N. Main Street, Leominster, MA 01453, United States
+- Website: https://tacojohnsnewengland.com
 
-- Leominster, MA: 536 N. Main Street, Leominster, MA 01453. Phone: (978) 252-0775. Hours: Mon–Thu 7:00 AM–midnight, Fri–Sat 7:00 AM–1:00 AM, Sun 7:00 AM–midnight.
-- Boston, MA: 77 Summer Street, Boston, MA 02111. Phone: (617) 431-8787. Hours: Mon–Sat 7:00 AM–midnight, Sun 8:00 AM–midnight.
-- Newington, CT: 56B Costello Road, Newington, CT 06111. Coming soon. Phone: (800) 854-0819.
+## Pages
+- [Taco John's Mexican Food](https://tacojohnsnewengland.com/)
+- [Boston — Mexican Food &amp; Tacos](https://tacojohnsnewengland.com/location-boston)
+- [Leominster — Mexican Food &amp; Tacos](https://tacojohnsnewengland.com/location-leominster)
+- [Newington — Mexican Food Coming Soon](https://tacojohnsnewengland.com/location-newington)
 
-## Offerings
+## Action Links
+- [Order Online](https://order.tacojohns.com/)
+- [View Locations](https://locations.tacojohns.com/#locations)
 
-- Mexican favorites: tacos, burritos, Stuffed Grilled Tacos, Fried Chicken Taco, Potato Olés®
-- Breakfast burritos and Mexican Donut Bites
-- Value Menu starting at $2
-- Taco Tuesday
-- Catering
-- Online ordering: https://order.tacojohns.com/
-- Bigger Bolder Rewards and the Taco John's mobile app
-
-## Key pages
-
-- Home: https://tacojohnsnewengland.com/
-- Leominster: https://tacojohnsnewengland.com/location-leominster
-- Boston: https://tacojohnsnewengland.com/location-boston
-- Newington: https://tacojohnsnewengland.com/location-newington
-
-## Contact
-
-- Web: https://tacojohnsnewengland.com/
-- Order: https://order.tacojohns.com/
-- Social: https://www.facebook.com/tacojohns, https://www.instagram.com/tacojohns/, https://twitter.com/tacojohns
+## Social
+- [Instagram](https://www.instagram.com/tacojohns/)
+- [Facebook](https://www.facebook.com/tacojohns)
+- [Twitter](https://twitter.com/tacojohns)
